@@ -1,0 +1,103 @@
+/* styles.css */
+
+/* Định dạng menu */
+ul.nav-menu {
+    list-style-type: none;
+    /* Bỏ dấu chấm đầu dòng */
+    padding: 0;
+    /* Bỏ padding */
+    margin: 0;
+    /* Bỏ margin */
+    background-color: #333;
+    /* Màu nền cho menu */
+    overflow: hidden;
+    /* Ẩn phần dư thừa */
+}
+
+ul.nav-menu li {
+    float: left;
+    /* Các mục trong menu nằm ngang */
+    position: relative;
+    /* Để chứa menu thả xuống */
+}
+
+ul.nav-menu li a {
+    display: block;
+    /* Hiển thị dưới dạng khối */
+    color: white;
+    /* Màu chữ */
+    text-align: center;
+    /* Căn giữa chữ */
+    padding: 14px 16px;
+    /* Khoảng cách bên trong */
+    text-decoration: none;
+    /* Bỏ gạch chân */
+}
+
+ul.nav-menu li a:hover {
+    background-color: #111;
+    /* Màu nền khi hover */
+}
+
+/* Định dạng menu thả xuống */
+ul.nav-menu li ul.dropdown {
+    display: none;
+    /* Ẩn menu thả xuống */
+    position: absolute;
+    /* Đặt vị trí tuyệt đối */
+    top: 100%;
+    /* Đặt bên dưới menu chính */
+    left: 0;
+    /* Canh trái theo menu chính */
+    background-color: #333;
+    /* Màu nền cho menu thả xuống */
+    padding: 0;
+    /* Bỏ padding */
+    margin: 0;
+    /* Bỏ margin */
+    list-style-type: none;
+    /* Bỏ dấu chấm đầu dòng */
+    z-index: 1;
+    /* Đảm bảo menu thả xuống nằm trên cùng */
+}
+
+ul.nav-menu li ul.dropdown li {
+    float: none;
+    /* Các mục trong menu thả xuống nằm dọc */
+}
+
+ul.nav-menu li ul.dropdown li a {
+    padding: 12px 16px;
+    /* Khoảng cách bên trong */
+}
+
+ul.nav-menu li:hover ul.dropdown {
+    display: block;
+    /* Hiển thị menu thả xuống khi hover */
+}
+
+.table {
+    margin: 15px 15px 15px 15px;
+    border: solid black 1px;
+}
+
+.table tr th {
+    border: none;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.table tr td {
+    border: none;
+    text-align: center;
+}
+
+.table tr:nth-child(odd) {
+    background-color: greenyellow;
+    
+}
+
+.table tr:nth-child(even) {
+    background-color: #ffffff;
+}
